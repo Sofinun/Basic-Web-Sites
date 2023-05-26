@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    color: rgb(42, 42, 42);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a {
+    padding-left: 25px;
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 0.5s;
+
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    width: max-content;
+
+}
+
+nav a:hover {
+    color: rosybrown;
+    text-decoration-color: rosybrown;
+}
+
+.current {
+    color: rosybrown;
+}
+
+
+
+/* header */
+
+.navbar {
+    width: auto;
+    max-width: 100%;
+    background-color: white;
+    display: flex;
+    color: rgb(42, 42, 42);
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 10px;
+}
+
+.navbar .logo {
+    width: 50px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.navbar-logo {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+
+.nav ul {
+    width: 100%;
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Banner o hero */
+#hero {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    /* linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)) */
+    background-image: url("../img/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#hero h1 {
+    font-size: 80px;
+}
+
+#hero h3 {
+    font-size: 25px;
+}
+
+#hero .icons {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+
+}
+
+#hero .icons i {
+    cursor: pointer;
+    padding: 5px 5px 5px 5px;
+}
+
+.portfolio {
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    background-color: white;
+    width: auto;
+    height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.portfolio .items {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.items .img {
+    width: 50%;
+}
+
+.items .video {
+    width: 50%;
+}
+
+.items .video h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.items .video iframe {
+    max-width: 100%;
+}
+
+.items .img img {
+    max-width: 100%;
+}
+
+
+
+/* .portfolio aside {
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+} */
+
+#footer {
+    width: auto;
+    height: 7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 15px;
+    background-color: #7c8d7d;
+}
+
+#footer .footer-icons {
+    font-size: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#footer .footer-icons i {
+    font-size: 30px;
+    max-width: 100%;
+    padding: 10px 20px 10px 20px;
+}
+
+#footer ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    gap: 20px;
+}
+
+#footer p {
+    font-size: 20px;
+}
+
+/* Proyectos */
+
+main {
+    display: flex;
+    width: auto;
+    height: 80vh;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: rgba(255, 171, 148, 0.439);
+    flex-wrap: wrap;
+
+}
+
+
+.article button {
+    max-width: 100%;
+    width: 250px;
+}
+
+.article .descrip {
+    gap: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.article-title {
+    font-size: 35px;
+}
+
+button {
+    width: 20%;
+    padding: 15px 15px 15px 15px;
+    border-radius: 50px;
+    border: 1px solid;
+    border-color: rgb(42, 42, 42);
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+/* Formulario */
+
+#formulario {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.illus {
+    width: 50%;
+    text-align: center;
+    margin-top: 55px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 30px;
+    width: 50%;
+    margin: 20px 15px 20px 100px;
+}
+
+form label {
+    font-size: 20px;
+}
+
+/* form input {
+    max-width: 500px;
+    height: 30px;
+} */
+
+input,
+textarea {
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border-style: groove;
+    background-color: rgb(245, 245, 245);
+    border: 2px solid rgb(197, 197, 197);
+    outline: none;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 20px;
+}

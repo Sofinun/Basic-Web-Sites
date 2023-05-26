@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PomodoroTimeZone</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html"><img src="img/darklogo.png"
+                        alt="Logo Pomodoro Time Zone by UnknowTech"></a></div>
+        </nav>
+    </header>
+    <main>
+        <div class="contenido">
+            <div class="modo">
+                <a href="index.html"><button>Pomodoro</button></a>
+                <a href="shortbreak.html"><button>Short break</button></a>
+                <a href="shortlong.html"><button class="current">Long break</button></a>
+            </div>
+
+            <div class="caja-contador">
+                <span id="contador"> 10:00</span>
+            </div>
+
+            <audio id="alarm" src="sonidos/alarm.mp3" type="audio/mp3"></audio>
+
+            <div class="botones">
+                <input type="button" id="startButton" value="Start" onclick="iniciarCuentaRegresiva()">
+                <input type="button" id="resetButton" value="Reset" onclick="reiniciarCuentaRegresiva()">
+                <input type="button" id="configButton" value="Configuración">
+
+            </div>
+        </div>
+    </main>
+</body>
+<script src="scriptlong.js"></script>
+
+</html>
